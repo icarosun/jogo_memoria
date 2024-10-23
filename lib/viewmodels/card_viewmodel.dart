@@ -3,12 +3,12 @@ import '../model/cardGame.dart';
 
 class CardViewModel extends ChangeNotifier {
   List<CardGame> _cardsGame = [
-    CardGame(title: "A", value: 1),
-    CardGame(title: "B", value: 2),
-    CardGame(title: "B", value: 2),
-    CardGame(title: "A", value: 1),
-    CardGame(title: "C", value: 3),
-    CardGame(title: "C", value: 3),
+    CardGame(title: "assets/lampada.png", value: 1),
+    CardGame(title: "assets/gas.png", value: 2),
+    CardGame(title: "assets/gas.png", value: 2),
+    CardGame(title: "assets/lampada.png", value: 1),
+    CardGame(title: "assets/ouro.png", value: 3),
+    CardGame(title: "assets/ouro.png", value: 3),
   ];
 
   List<CardGame> flippedCards = [];
