@@ -14,19 +14,19 @@ class MemoryGame extends StatelessWidget {
           child: Consumer<CardViewModel>(
             builder: (context, viewModel, child) {
               return Wrap(
-                spacing: 8.0,
-                runSpacing: 8.0,
+                spacing: 5.0,
+                runSpacing: 5.0,
                 children: List.generate(viewModel.cardsGame.length, (index) {
                   final card = viewModel.cardsGame[index];
                   final isFlipped = viewModel.flippedCards.contains(card) || card.isFoundCouple;
                   
                   return Container(
-                    width: 200, 
+                    width: 165, 
                     height: 250,
                     child: GestureDetector(
                       onTap: () => viewModel.flipCard(card),
                       child: isFlipped
-                        ? Image.asset(card.title)
+                        ? Image.asset(card.url)
                         : Image.asset(
                           'assets/card.png',
                         )

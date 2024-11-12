@@ -1,7 +1,7 @@
 class CardGame {
-    final String title;
+    final String url;
     final int value; 
     bool isFoundCouple = false;
 
-    CardGame({required this.title, required this.value});
+    CardGame({required this.url, required this.value});
   }

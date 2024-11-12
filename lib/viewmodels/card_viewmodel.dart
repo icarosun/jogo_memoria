@@ -3,12 +3,24 @@ import '../model/cardGame.dart';
 
 class CardViewModel extends ChangeNotifier {
   List<CardGame> _cardsGame = [
-    CardGame(title: "assets/lampada.png", value: 1),
-    CardGame(title: "assets/gas.png", value: 2),
-    CardGame(title: "assets/gas.png", value: 2),
-    CardGame(title: "assets/lampada.png", value: 1),
-    CardGame(title: "assets/ouro.png", value: 3),
-    CardGame(title: "assets/ouro.png", value: 3),
+    CardGame(url: "assets/calcario.png", value: 1),
+    CardGame(url: "assets/calcario.png", value: 1),
+    CardGame(url: "assets/energia_eletrica.png", value: 2),
+    CardGame(url: "assets/energia_eletrica.png", value: 2),
+    CardGame(url: "assets/energia_eolica.png", value: 3),
+    CardGame(url: "assets/energia_eolica.png", value: 3),
+    CardGame(url: "assets/energia_solar.png", value: 4),
+    CardGame(url: "assets/energia_solar.png", value: 4),
+    CardGame(url: "assets/gas_helio.png", value: 5),
+    CardGame(url: "assets/gas_helio.png", value: 5),
+    CardGame(url: "assets/glp.png", value: 6),
+    CardGame(url: "assets/glp.png", value: 6),
+    CardGame(url: "assets/gnv.png", value: 7),
+    CardGame(url: "assets/gnv.png", value: 7),
+    CardGame(url: "assets/ouro.png", value: 8),
+    CardGame(url: "assets/ouro.png", value: 8),
+    CardGame(url: "assets/potassio.png", value: 9),
+    CardGame(url: "assets/potassio.png", value: 9),
   ];
 
   List<CardGame> flippedCards = [];
